@@ -1,0 +1,168 @@
+/* ------------ BASIC SETUP ------------ */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #16a085;
+    color: #555;
+    font-family: "Lato", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* ------------ HEADERS ------------ */
+
+h1,
+h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    margin-top: 50px;
+    font-size: 240%;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 150%;
+    text-align: left;
+}
+
+
+/* ------------ GENERAL LAYOUTS ------------ */
+
+.information {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 30px;
+    line-height: 150%;
+}
+
+.food-container {
+    padding: 50px 50px;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    min-height: 100px;
+    overflow: hidden;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.food-section {
+    color: #555;
+    border: 1px solid #95a5a6;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 1px 2px 4px transparent;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.food-section:hover {
+    color: #fff;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    background-color: #1abc9c;
+}
+
+.food-section p {
+    text-align: justify;
+    padding: 20px;
+}
+
+.food-section h2 {
+    width: 60%;
+    height: auto;
+    position: relative;
+    top: 0%;
+    left: 40.1%;
+    text-align: center;
+    background-color: #1abc9c;
+    border: 1px solid #95a5a6;
+    overflow: auto;
+    padding: 5px;
+}
+
+.web-footer {
+    width: 100%;
+    bottom: 0;
+    margin-top: 80px;
+    padding: 20px 0;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.web-footer a:link,
+.web-footer a:visited {
+    color: #555;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+.web-footer a:active,
+.web-footer a:hover {
+    color: #1abc9c;
+    border-bottom: 2px solid #1abc9c;
+}
+
+
+/* ------------ DEVICE LAYOUTS ------------ */
+
+
+/* Desktop */
+
+@media (min-width: 992px) {
+    .food-section {
+        width: 32%;
+    }
+    .box-chicken {
+        float: left;
+    }
+    .box-beef {
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .box-sushi {
+        float: right;
+    }
+}
+
+
+/* Tablet */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .box-chicken {
+        width: 49%;
+        float: left;
+        margin-bottom: 20px;
+    }
+    .box-beef {
+        width: 49%;
+        float: right;
+        margin-bottom: 20px;
+    }
+    .box-sushi {
+        width: 100%;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 767px) {
+    .food-section {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
